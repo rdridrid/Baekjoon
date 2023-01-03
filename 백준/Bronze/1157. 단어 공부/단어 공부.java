@@ -19,7 +19,7 @@ public class Main{
                 maxalpha[alpha-'A']++;//A일때 0
             }
         }
-        max=-1;
+        max=-1; //첫 문자만 있는경우 else if 조건에 걸리므로 반드시 첫문자는 if문으로 들어가도록 -1로 초기화
         for(int k=0;k<26;k++){
             if(max<maxalpha[k]){
                 flag = 0; //최대값을 찾으면 flag초기화(같은 빈도의 알파벳이 없음)
