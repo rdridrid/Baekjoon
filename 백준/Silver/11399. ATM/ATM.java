@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-//선택 정렬
+//삽입 정렬
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,7 +15,7 @@ public class Main {
             arr[i] = Integer.parseInt(st.nextToken());
         }
         //정렬
-        SelectedSort(arr);
+        inputSort(arr);
         //
         for(int i=0;i<N;i++){
             temp+=arr[i];
@@ -23,7 +23,7 @@ public class Main {
         }
         System.out.println(sum);
     }
-    static void SelectedSort(int[] arr){
+    static void inputSort(int[] arr){
         for(int i=0;i<arr.length-1;i++){
             int min = i;
             for(int j=i+1;j<arr.length;j++){
