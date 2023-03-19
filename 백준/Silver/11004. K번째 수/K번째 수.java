@@ -19,7 +19,7 @@ public class Main {
         System.out.println(arr[K-1]);
     }
     public static int partition(int[] arr, int left, int right){
-        int pivot = (left+right)/2;
+        int pivot = (left+right)/2; //일부 정렬된 부분배열의 중앙값을 피봇으로 정함.
         int temp; //left, right, pivot끼리 값을 교환할 때 사용
         int pp = arr[pivot];
         temp = arr[left];
