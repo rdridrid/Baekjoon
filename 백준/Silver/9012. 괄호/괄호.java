@@ -26,7 +26,7 @@ public class Main {
                     }
                 }
             }
-            if(stack.size()>0){
+            if(stack.size()>0){ // '(' 가 남고 ')'가 없는 경우
                 flag = 1;
             }
             if(flag == 1){
@@ -44,14 +44,12 @@ class Stack{
     char[] stack;
     Stack(int n){
         stack = new char[n];
-        pos = -1;
-        size = n;
+        pos = -1; //스택 위치, 크기 역할.
     }
     public void push(char n){
         if(pos<n-1) {
             pos++;
             stack[pos] = n;
-            size++;
         }
     }
     public char pop(){
